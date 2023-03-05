@@ -33,7 +33,7 @@ Check the APIs
 
 Add your server name ie. http://127.0.0.1:8000/ or localhost in below ENDPOINTS
 
-| Method | Endpoint | WORK |
+| Method | Endpoint | Description |
 | ------ | ------ | ----- |
 | POST | /order | create a new order |
 | POST | /order/show|  show the order based on id |
