@@ -33,11 +33,13 @@ Check the APIs
 
 Add your server name ie. http://127.0.0.1:8000/ or localhost in below ENDPOINTS
 
-| Method | Endpoint | Description |
-| ------ | ------ | ----- |
-| POST | /order | create a new order |
-| POST | /order/show|  show the order based on id |
-| PUT | /order | Update the specified order |
-| DELETE | /order | Delete the specified order |
-| POST | /order/{id}/add | Add products to specified order if payed is null by default payed is NULL |
-| POST | /order/{id}/pay | Update the order of payed based on https://superpay.view.agentur-loop.com/pay result |
+To test the EndPoints open Postman add the method and url in Body tab choose x-www-form-urlencoded and add parameters over there 
+
+| Method | Endpoint | Description | Parameters |
+| ------ | ------ | ----- | ----- | 
+| POST | /order | create a new order | customer => email, Get email from customer table to create orders |
+| POST | /order/show|  show the order based on id | id => id, Pass id parameter to get the specified order |
+| PUT | /order | Update the specified order | id => id, customer => email |
+| DELETE | /order | Delete the specified order | id => id |
+| POST | /order/{id}/add | Add products to specified order if payed is null by default payed is NULL | product_id => product_id |
+| POST | /order/{id}/pay | Update the order of payed based on https://superpay.view.agentur-loop.com/pay result |   |
